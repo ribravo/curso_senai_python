@@ -14,17 +14,17 @@
 # print(type(True))
 # print(type(9.80))
 
-#----- Variaveis------
+# #----- Variaveis------
 
-nome="Alessandro Costa Ferreira"
-idade=39
-altura= float(1.66)
-peso = float(68.8)
-print("Olá",nome ,"voce tem ",idade,"Anos"," e sua altura é ",altura,"metros"," e seu peso é ",peso,"Kg")
-print("Olá {} voce tem {} Anos e sua altura é {} metros e seu peso é {} Kg".format(nome,idade,altura,peso))
-print(f"Olá {nome} voce tem {idade} Anos e sua altura é {altura} metros e seu peso é {peso} Kg")
-imc = peso / (altura * altura)
-print("Seu IMC é : ", imc)
+# nome="Alessandro Costa Ferreira"
+# idade=39
+# altura= float(1.66)
+# peso = float(68.8)
+# print("Olá",nome ,"voce tem ",idade,"Anos"," e sua altura é ",altura,"metros"," e seu peso é ",peso,"Kg")
+# print("Olá {} voce tem {} Anos e sua altura é {} metros e seu peso é {} Kg".format(nome,idade,altura,peso))
+# print(f"Olá {nome} voce tem {idade} Anos e sua altura é {altura} metros e seu peso é {peso} Kg")
+# imc = peso / (altura * altura)
+# print("Seu IMC é : ", imc)
 
 
 

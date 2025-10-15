@@ -145,4 +145,3 @@ print(sum(numeros))
 numeros =  [4, 7, -1, 9, 3]
 print(max(numeros))
 print(min(numeros))
-
