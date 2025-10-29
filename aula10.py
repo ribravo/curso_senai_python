@@ -151,11 +151,16 @@
 
 # Descobrir posião do elemento:
 
-frutas = ["Berinjela", "Pimentão", "Pepino", "Chuchu", "Tomate"]
+frutas = ["berinjela", "pimentão", "pepino", "chuchu", "tomate"]
 
-procurar = input("Digite a fruta: ")
+procurar = input("Digite a fruta: ").strip().capitalize()
 
 if procurar in frutas:
     print("Esta na posição:", frutas.index(procurar))
 else:
     print("Esta fruta não está na lista!")
+
+# Função .capitalize() -> Altera as iniciais em maiusculo Ex. Tomate
+# Funçao .lower() -> Altera as letras para minusculas Ex. tomate
+# Função .upper() -> Altera as letras para maiusculas Ex. TOMATE
+# Função .strip() -> Remove os espaços do inicio e fim
