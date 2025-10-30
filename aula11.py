@@ -103,19 +103,81 @@
 
 # print(marcas)
 
+# lista = []
+
+# for i in range(3):
+#     lista.append(i)
+#     lista.append(i + 10)
+    
+# print(lista)
+
+# lista = []
+
+# for i in range(3):
+#     num = [i, i+10]
+#     lista.extend(num)
+    
+# print(lista)
+
+# # Fatiamentos -> Fatiamento serve para pegar partes especificas
+# # Lista[inicio:fim:intervalo]
+
+# num = [10, 20, 30, 40, 50, 60]
+# print(num[1:5]) # fatiamento com inicio e fim
+# print(num[:3]) # fatiamento com fim
+# print(num[2:]) # fatiamento com inicio
+# print(num[::2]) # fatiamento com intervalo
+# print(num[-3:]) # fatiamento de traz para frente
+# print(num[::-1]) # fatiamento de traz para frente. Como não tem inicio e fim, ele mostra todos os valores da lista em ordem decrescente
+
+# nome = "SENAI"
+# print([nome[0:3]]) # O resultado será tipo lista
+# print([nome[-3:]])
+
+# # Substituindo valores da lista
+# num = [10, 20, 30, 40, 50, 60]
+# print(num[3:7])
+# num[1:4] = [2, 3, 4] # Substitui os valores dentro dessa posição
+# print(num)
+
+
+# num = [10, 20, 30, 40, 50, 60]
+# print(num[:]) # Retorna a lista completa
+
+# num = [10, 20, 30, 40, 50, 60]
+# print(num[:])
+# num[:] = []
+# print(num) # Retorna a lista vazia
+
+
+par = []
+impar = []
 lista = []
 
-for i in range(3):
-    lista.append(i)
-    lista.append(i + 10)
-    
-print(lista)
 
-lista = []
+for i in range(1, 21):
+    num = int(input(f"Digite o {i}º numero inteiro: "))
+    lista.append(num)
+    if num % 2 == 0:
+        par.append(num)
+    else:
+        impar.append(num)
 
-for i in range(3):
-    num = [i, i+10]
-    lista.extend(num)
-    
-print(lista)
+print(f"Os numeros informados são {lista}")
+print(f"Numeros pares: {par}")
+print(f"Numeros impares: {impar}")
 
+# notas = []
+# acima_media = 0
+
+# for i in range(6):
+#     for y in range(4):
+#         nota = float(input(f"Digite a {y +1} nota do {i + 1} aluno: "))
+#         notas.append(nota)
+#     media = sum(notas) / 4
+#     if media >= 7.0:
+#         acima_media += 1
+#     print(f"A média desse aluno é {media}")
+#     notas = []
+
+# print(f"{acima_media} alunos com nota maior ou igual a 7")
