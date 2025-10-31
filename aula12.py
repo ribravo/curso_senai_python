@@ -78,20 +78,60 @@
 # concat = tupla1 + tupla2
 # print(concat)
 
-# Desempacotamento:
+# # Desempacotamento:
 
-tuplaCarros = ("Uno", "Ranger", "Golf")
-carro3, carro1, carro2 = tuplaCarros
+# tuplaCarros = ("Uno", "Ranger", "Golf")
+# carro3, carro1, carro2 = tuplaCarros
 
-print(f"Carro 1: {carro1}")
-print(f"Carro 2: {carro2}")
-print(f"Carro 3: {carro3}")
+# print(f"Carro 1: {carro1}")
+# print(f"Carro 2: {carro2}")
+# print(f"Carro 3: {carro3}")
 
-print(type(carro3))
+# print(type(carro3))
 
-pessoa = ("Bravo", 25, 1.85)
-nome, idade, altura = pessoa
-print(type(nome))
-print(type(idade))
-print(type(altura))
+# pessoa = ("Bravo", 25, 1.85)
+# nome, idade, altura = pessoa
+# print(type(nome))
+# print(type(idade))
+# print(type(altura))
 
+# # Desempacotamento em sequencia:
+
+# tuplaCarros = ("Uno", "Ranger", "Golf", "Tucson", "Elantra", "Fiesta")
+# carros1, *carros = tuplaCarros
+# print(carros1)
+# print(*carros)
+
+# # Desempacotamento fora de  sequencia:
+
+# tuplaCarros = ("Uno", "Ranger", "Golf", "Tucson", "Elantra", "Fiesta")
+# *carros, carro1, carro2 = tuplaCarros
+# print(*carros)
+# print(carro1)
+# print(carro2)
+
+# tuplaCarros = ("Uno", "Ranger", "Golf", "Tucson", "Elantra", "Fiesta")
+# carro1, *carros, carro2 = tuplaCarros
+# print(carro1)
+# print(*carros)
+# print(carro2)
+
+# # Converter Lista em Tupla:
+# lista = ["Uno", "Ranger", "Golf", "Tucson", "Elantra", "Fiesta"]
+
+# tupla = tuple(lista)
+
+# print(type(tupla))
+# print(tupla)
+# # tupla.append("KA") -> Dá erro, tupla não recebe dados
+
+# Converter tupla em lista
+
+tupla = "Uno", "Ranger", "Golf", "Tucson", "Elantra", "Fiesta"
+
+lista = list(tupla)
+
+print(type(lista))
+print(lista)
+lista.append("Fusca")
+print(lista)
