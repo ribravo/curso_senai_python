@@ -121,12 +121,10 @@ produtos = {
 }
 
 while True:
-    consulta = input("Digite o produto (0 para sair): ")
+    consulta = input("Digite o produto (0 para sair): ").lower()
     if consulta == "0":
         break
     if consulta in produtos:
-        print(f"Produto {consulta} custa {produtos[consulta]}")
-        # qtd = int(input("Informe a quantidade: "))
-        # total = 
+        print(f"Produto {consulta} custa {produtos[consulta]:.2f}")
     else:
         print(f"Produto {consulta} não encontrado")
