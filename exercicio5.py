@@ -19,8 +19,11 @@ while True:
         print(f"Produto {consulta} não encontrado")
         descisao = input(f"Deseja cadastrar o produto {consulta}? S para SIM ou N para Não: ").upper()
         if descisao == "S":
-            valor = float(input("Digite o valor do produto: "))
+            valor = float(input(f"Digite o valor do produto {consulta}: "))
             produtos[consulta] = valor
+            print(f"O produto {consulta} foi cadastrado com o valor {valor} com sucesso.")
+        else:
+            print("Produto não foi cadastrado.")
 
 print()
 print("Segue a lista atualizada")
